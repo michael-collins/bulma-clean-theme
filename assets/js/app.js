@@ -23,3 +23,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+// Accordion
+$(document).ready(function() {
+  $('#only-one [data-accordion]').accordion();
+
+  $('#multiple [data-accordion]').accordion({
+    singleOpen: false
+  });
+
+  $('#single[data-accordion]').accordion({
+    transitionEasing: 'cubic-bezier(0.455, 0.030, 0.515, 0.955)',
+    transitionSpeed: 200
+  });
+});
